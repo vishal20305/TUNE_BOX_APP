@@ -1,4 +1,4 @@
-# TUNE_BOX_APP
+# TUNE_BOX_APP is an Music Player android apolication.
 The app will have control to
 (1) to start a foreground service to start playing music (store some music files in appropriate
 resource directory)
