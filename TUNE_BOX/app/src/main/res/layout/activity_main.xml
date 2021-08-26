@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="680dp"
+        android:orientation="vertical"
+        android:background="@color/cardview_shadow_start_color">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tl"
+            style="@style/Widget.AppCompat.ActionBar.Solid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/cardview_shadow_start_color"
+            app:tabIndicatorColor="@color/design_default_color_primary_dark"
+            app:tabIndicatorGravity="center"
+            app:tabIndicatorHeight="40dp"
+            app:tabTextColor="@color/design_default_color_error" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="630dp">
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+
+
+            android:background="@drawable/play"
+            />
+
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_shadow_start_color"
+            android:gravity="center"
+            android:layout_weight="0.6"
+            />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+
+
+            android:background="@drawable/stop"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
